@@ -1,7 +1,16 @@
-export default function ProductCard({ image, title, price }){
+type ProductCardProps = {
+    image: string;
+    title: string;
+    price: string;
+};
+
+
+
+
+export default function ProductCard({ image, title, price }: ProductCardProps){
     return(
         <div className="card">
-            <img src={image} alt={title} />
+            <img src = {image} alt={title} />
 
             <div className="card-content">
                 <h3>{title}</h3>
